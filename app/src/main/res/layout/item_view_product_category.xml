@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_margin="2.60dp"
+    android:id="@+id/mainBg"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/ivCategoryImage"
+        android:layout_width="78.00dp"
+        android:layout_height="78.00dp"
+        android:background="@drawable/bg_category"
+        android:scaleType="centerInside"
+        android:src="@drawable/vegetable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCategoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vegetables and fruits"
+        android:textAlignment="center"
+        android:textSize="@dimen/_11ssp"
+        android:maxWidth="@dimen/_64sdp"
+        android:singleLine="false"
+        android:layout_marginTop="6.50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/CategoryImage"
+        app:layout_constraintTop_toBottomOf="@+id/CategoryImage" />
+
+
+</LinearLayout>

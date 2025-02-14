@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "250792972969",
+    "project_id": "final-book-ae7ff",
+    "storage_bucket": "final-book-ae7ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250792972969:android:92e1c36b2d7e4db50c8fb8",
+        "android_client_info": {
+          "package_name": "com.example.pensievechecker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARXiFvWT3YYEbVhUy25rM15uxldHaMWyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250792972969:android:6d90217f5e41827b0c8fb8",
+        "android_client_info": {
+          "package_name": "com.example.reflectify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARXiFvWT3YYEbVhUy25rM15uxldHaMWyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250792972969:android:2627be08639a9c700c8fb8",
+        "android_client_info": {
+          "package_name": "com.example.userblinkit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARXiFvWT3YYEbVhUy25rM15uxldHaMWyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_320sdp"
+            android:layout_height="@dimen/_300sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_prod"/>
+
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:src="@drawable/app_icon"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:text="India's last minute app"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18ssp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Login or SignUp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_22ssp"
+            android:layout_marginTop="@dimen/_15ssp"
+            app:boxCornerRadiusBottomEnd="@dimen/_12ssp"
+            app:boxCornerRadiusBottomStart="@dimen/_12ssp"
+            app:boxCornerRadiusTopEnd="@dimen/_12ssp"
+            app:endIconMode="clear_text"
+            app:boxCornerRadiusTopStart="@dimen/_12ssp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etUserNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_6ssp"
+                android:drawableTint="@color/black"
+                android:hint="Enter mobile number"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/continuebtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_43sdp"
+            android:layout_gravity="center"
+            android:text="Continue"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#8d99ae"
+            android:textSize="@dimen/_14ssp"
+            app:cornerRadius="@dimen/_6sdp"
+            android:layout_marginHorizontal="@dimen/_22sdp"
+            android:layout_marginTop="@dimen/_4sdp"/>
+    </LinearLayout>
+
+</ScrollView>
