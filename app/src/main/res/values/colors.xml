@@ -9,6 +9,8 @@
     <color name="grayish_blue">#8d99ae</color>
     <color name="white_yellow">#FFFFFF</color>
     <color name="blue">#1364F0</color>
+    <color name="diyaGrey">#808080</color>
     <color name="diya">#ffbe0b</color>
+    <color name="diyaFlame">#ffbe0b</color>
     <color name="orange">#FE560E</color>
 </resources>

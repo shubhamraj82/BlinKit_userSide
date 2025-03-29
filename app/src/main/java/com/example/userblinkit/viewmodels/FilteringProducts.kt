@@ -1,4 +1,4 @@
-package com.example.userblinkit
+package com.example.userblinkit.viewmodels
 
 import android.widget.Filter
 import com.example.userblinkit.adapters.AdapterProduct

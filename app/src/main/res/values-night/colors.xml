@@ -3,8 +3,10 @@
     <color name="black">#FFFFFFFF</color>
     <color name="white">#FF000000</color>
     <color name="diya">#ffbe0b</color>
+    <color name="diyaFlame">#ffbe0b</color>
     <color name="yellow">#FFBE0B</color>
     <color name="green">#FF008000</color>
+    <color name="diyaGrey">#808080</color>
     <color name="grayish_blue">#8d99ae</color>
     <color name="white_yellow">#ffbe0b</color>
 </resources>

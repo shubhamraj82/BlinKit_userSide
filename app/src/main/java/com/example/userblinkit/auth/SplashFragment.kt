@@ -31,7 +31,7 @@ class SplashFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentSplashBinding.inflate(layoutInflater)
         SetStatusBarColor()
-        // execture a task after delay --> Handler looper
+        // execute a task after delay --> Handler looper
         Handler(Looper.getMainLooper()).postDelayed({
 
             lifecycleScope.launch {

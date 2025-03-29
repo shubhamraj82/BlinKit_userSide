@@ -12,7 +12,7 @@ class AdapterCategory(
     val onCategoryIconClicked: (Category) -> Unit
 ) : RecyclerView.Adapter<AdapterCategory.CategoryViewHolder>() {
 
-        class CategoryViewHolder(val binding: ItemViewProductCategoryBinding) : ViewHolder(binding.root)
+    class CategoryViewHolder(val binding: ItemViewProductCategoryBinding) : ViewHolder(binding.root)
 
     // Responsible for inflating the views
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryViewHolder {
@@ -34,6 +34,9 @@ class AdapterCategory(
             tvCategoryTitle.text = categoryList[position].title
         }
 
+        // When user clicks on a category, the 'onCategoryIconClicked' function will be called
+        // flow of program will go back to HomeFragment where 'onCategoryIconClicked' was defined
+        // 'onCategoryIconClicked' will send over the title and navigate to category fragment
         holder.itemView.setOnClickListener {
             onCategoryIconClicked(category)
         }

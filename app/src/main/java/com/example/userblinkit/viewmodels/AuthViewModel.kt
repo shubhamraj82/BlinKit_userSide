@@ -2,7 +2,7 @@ package com.example.userblinkit.viewmodels
 
 import android.app.Activity
 import androidx.lifecycle.ViewModel
-import com.example.userblinkit.Utils
+import com.example.userblinkit.Utils.Utils
 import com.example.userblinkit.models.Users
 import com.google.firebase.FirebaseException
 import com.google.firebase.auth.PhoneAuthCredential
@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit
 
 class AuthViewModel : ViewModel(){
 
-    // similar to livedata, used for ubserving latest state of variable
+    // similar to livedata, used for observing latest state of variable
     private val _verificationId = MutableStateFlow<String?>(null)
 
     private val _otpSent = MutableStateFlow(false)
@@ -62,14 +62,21 @@ class AuthViewModel : ViewModel(){
             .addOnCompleteListener { task ->
                 user.uid = Utils.getCurrentUserId()
                 if (task.isSuccessful) {
-                    FirebaseDatabase.getInstance().getReference("Admins")
-                        .child("AdminsInfo")
+                    val userRef = FirebaseDatabase.getInstance().getReference("All Users")
+                        .child("Users")
                         .child(user.uid!!)
-                        .setValue(user)
 
-                    _isSignedInSuccessfully.value = true
+                    userRef.get().addOnSuccessListener { snapshot ->
+                        if (!snapshot.exists()) {
+                            userRef.setValue(user)
+                        }
+                        _isSignedInSuccessfully.value = true
+                    }.addOnFailureListener {
+                        _isSignedInSuccessfully.value = false
+                    }
+                } else {
+                    _isSignedInSuccessfully.value = false
                 }
             }
     }
-
 }

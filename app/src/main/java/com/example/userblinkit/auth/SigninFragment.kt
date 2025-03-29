@@ -11,7 +11,7 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
 import com.example.userblinkit.R
-import com.example.userblinkit.Utils
+import com.example.userblinkit.Utils.Utils
 import com.example.userblinkit.databinding.FragmentSigninBinding
 
 class signinFragment : Fragment() {

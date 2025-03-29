@@ -12,7 +12,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.example.userblinkit.R
-import com.example.userblinkit.Utils
+import com.example.userblinkit.Utils.Utils
 import com.example.userblinkit.activity.UsersMainActivity
 import com.example.userblinkit.databinding.FragmentOTPBinding
 import com.example.userblinkit.models.Users
@@ -71,7 +71,7 @@ class OTPFragment : Fragment() {
 
     private fun verifyOtp(otp: String) {
 
-        val user = Users(uid = Utils.getCurrentUserId(), userPhoneNumber = userNumber, userAddress = null)
+        val user = Users(uid = null, userPhoneNumber = userNumber, userAddress = " ")
 
         viewModel.signInWithPhoneAuthCredential(otp, userNumber, user)
 

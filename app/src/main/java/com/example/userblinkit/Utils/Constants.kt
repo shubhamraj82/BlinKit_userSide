@@ -1,30 +1,32 @@
-package com.example.userblinkit
+package com.example.userblinkit.Utils
+
+import com.example.userblinkit.R
 
 object Constants {
 
-    val MERCHAT_ID = "PGTESTPAYUAT"
-    val SALT_KEY = "099eb0cd-02cf-4e2a-8aca-3e6c6aff0399"
-    var apiEndPoint ="/pg/v1/pay"
-    var merchantTransactionId = "txtIdd"
+    val MERCHANT_ID = "PGTESTPAYUAT86"
+    val SALT_KEY = "96434309-7796-489d-8924-ab56988a6076"
+    var apiEndPoint: String = "/pg/v1/pay"
+    var merchantTransactionId = "txnId"
 
     val allProductsCategory = arrayOf(
-        "Vegetables and Fruit",
-        "Dairy and BreakFast",
+        "Vegetables & Fruits",
+        "Dairy & Breakfast",
         "Munchies",
         "Cold Drinks & Juices",
         "Instant & Frozen Food",
-        "Tee Coffee & Health Drinks",
-        "Bakery and Biscuits",
+        "Tea Coffee & Health Drinks",
+        "Bakery & Biscuits",
         "Sweet Tooth",
         "Atta Rice & Dal",
         "Dry Fruits Masala & Oil",
         "Sauces & Spreads",
-        "Chicken Meat and Fish",
+        "Chicken Meat & Fish",
         "Pan Corner",
         "Organic & Premium",
         "Baby Care",
         "Pharma & Wellness",
-        "Cleaning Essentials",
+        "Cleaning & Essential",
         "Home & Office",
         "Personal Care",
         "Pet Care"
